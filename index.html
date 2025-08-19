@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+    <script src="https://fpyf8.com/88/tag.min.js" data-zone="163860" async data-cfasync="false"></script>
+
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Download Ready | K-Drama Hub – Animated</title>
+<meta name="description" content="Clean single-file download page with animated progress, glow button, and confetti on ready." />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Download Ready | K-Drama Hub 🎬 My Troublesome Star (2025) - Episode 1 ✅">
+<meta property="og:description" content="Your K-Drama download is ready. Click and enjoy!">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://via.placeholder.com/600x315.png?text=K-Drama+Hub+Download+Ready">
+
+<style>
+:root{
+  --bg:#0b0f14; --panel:#111827; --ink:#e5e7eb; --ink-dim:#9ca3af; --accent:#22c55e; --accent-ink:#052e16; --warning:#f59e0b; --danger:#ef4444;
+}
+*{box-sizing:border-box}
+html,body{height:100%; margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",Ubuntu,Cantarell,Arial,sans-serif; background:radial-gradient(1200px 600px at 10% -20%,#1f2937 0%,rgba(31,41,55,0) 60%),radial-gradient(800px 400px at 120% 10%,#0f172a 0%,rgba(15,23,42,0) 60%),var(--bg); color:var(--ink); overflow-x:hidden;}
+body::before,body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:radial-gradient(#ffffff33 1px, transparent 1px);background-size:3px 3px;opacity:.12;animation:drift 40s linear infinite;}
+body::after{opacity:.08;filter:blur(0.6px);animation-duration:65s;}
+.wrap{max-width:880px;margin:0 auto;padding:24px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.35);animation:slideFadeIn .6s ease forwards;}
+.title{display:flex;align-items:center;gap:12px;font-weight:800;font-size:clamp(22px,3.5vw,32px)}
+.muted{color:var(--ink-dim)}
+.hr{height:1px;background:linear-gradient(90deg, rgba(255,255,255,.06), rgba(255,255,255,.12), rgba(255,255,255,.06)); margin:16px 0}
+.row{display:flex;flex-wrap:wrap;gap:16px}
+.grow{flex:1 1 260px}
+.progress{height:12px;border-radius:999px;background:#0b1220;border:1px solid rgba(255,255,255,.08);overflow:hidden}
+.bar{height:100%;width:0;background:linear-gradient(90deg, #16a34a, #22c55e, #4ade80);background-size:300% 100%;box-shadow:0 0 20px rgba(34,197,94,.35) inset;animation:gradientShift 2.2s linear infinite;transition:width .9s ease;}
+.btn{appearance:none;border:1px solid rgba(255,255,255,.12);background:linear-gradient(180deg, rgba(34,197,94,.18), rgba(34,197,94,.06));color:#ecfdf5;padding:14px 18px;border-radius:12px;font-weight:700;font-size:16px;display:inline-flex;align-items:center;gap:10px;text-decoration:none;transition:.2s transform,.3s box-shadow;opacity:.6;pointer-events:none;}
+.btn.ready{cursor:pointer;background:linear-gradient(180deg, var(--accent), #16a34a);color:#052e16;border-color:#16a34a;box-shadow:0 10px 28px rgba(34,197,94,.45);animation:glowPulse 1.8s ease-in-out infinite;opacity:1;pointer-events:auto;}
+.btn.ready:hover{transform:translateY(-1px)}
+.btn.info{cursor:pointer;background:linear-gradient(180deg,#3b82f6,#2563eb);color:#f0f9ff;border-color:#2563eb;box-shadow:0 8px 24px rgba(37,99,235,.45);opacity:1;pointer-events:auto;}
+#count.pop{animation:pop .35s ease}
+ol{padding-left:18px}
+li{margin:.5rem 0}
+.note{font-size:12px;color:var(--ink-dim)}
+.chips{display:flex; gap:8px; flex-wrap:wrap}
+.chip{font-size:12px; padding:.25rem .5rem; border-radius:999px; border:1px solid rgba(255,255,255,.12); background:#0d1320}
+.spinner{width:18px;height:18px;border:2px solid rgba(255,255,255,.25);border-top-color:var(--accent);border-radius:50%;animation:spin .9s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg)}}
+.confetti{position:fixed; top:50%; left:50%; width:8px; height:14px; opacity:0; transform:translate(-50%,-50%); border-radius:2px; pointer-events:none;}
+@keyframes burst{0%{opacity:1; transform:translate(-50%,-50%) scale(1)} 100%{opacity:0; transform:translate(var(--tx), var(--ty)) rotate(var(--rot))}}
+@keyframes shimmer{0%{left:-120%} 60%{left:120%} 100%{left:120%}}
+@keyframes gradientShift{0%{background-position:0% 50%} 100%{background-position:100% 50%}}
+@keyframes slideFadeIn{from{opacity:0; transform:translateY(10px)} to{opacity:1; transform:translateY(0)}}
+@keyframes glowPulse{0%,100%{box-shadow:0 10px 28px rgba(34,197,94,.35)} 50%{box-shadow:0 14px 36px rgba(34,197,94,.6)}}
+@keyframes pop{0%{transform:scale(1)} 40%{transform:scale(1.25)} 100%{transform:scale(1)}}
+@keyframes drift{from{transform:translateY(0)} to{transform:translateY(-40px)}}
+.center{display:flex;align-items:center;gap:10px}
+.hidden{display:none}
+#eta::after{content:"Preparing";animation:dots 2s infinite steps(1);}
+@keyframes dots{0%,20%{content:"Preparing"}40%{content:"Preparing."}60%{content:"Preparing.."}80%,100%{content:"Preparing..."}}
+.modal-backdrop{position:fixed; inset:0; background:rgba(2,6,23,.65); display:flex; align-items:center; justify-content:center; z-index:60; padding:20px; opacity:0; pointer-events:none; transition:opacity .18s ease;}
+.modal-backdrop.open{opacity:1; pointer-events:auto;}
+.modal{width:100%; max-width:900px; border-radius:12px; overflow:hidden; background:linear-gradient(180deg,#0b1220,#07101a); box-shadow:0 26px 60px rgba(2,6,23,.7); transform:translateY(8px); transition:transform .18s ease;}
+.modal-header{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.04)}
+.modal-body{padding:0; background:#000; display:flex; flex-direction:column;}
+.modal-body iframe{width:100%; height:520px; border:0;}
+.modal-steps{padding:12px; background:#111827; color:var(--ink); font-size:14px; line-height:1.5;}
+.modal-close{appearance:none;border:0;background:transparent;color:var(--ink-dim);font-weight:700;padding:8px 10px;border-radius:8px;cursor:pointer;}
+@media(max-width:640px){.modal iframe{height:280px;}.modal-steps{font-size:12px;}}
+</style>
+</head>
+<body>
+
+
+
+<!-- Top Ad -->
+<div style="text-align:center; margin:12px 0;">
+ <script type="text/javascript">
+	atOptions = {
+		'key' : 'a89eb63da56404c63da8c540b2fd9c33',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/a89eb63da56404c63da8c540b2fd9c33/invoke.js"></script>
+</div>
+
+
+
+<div class="wrap">
+  <div class="card">
+    <div class="title"><span>Download Ready</span></div>
+    <p class="muted" id="status-text">Please wait while we prepare your download link…</p>
+
+    <div class="row" style="margin-top:12px">
+      <div class="grow">
+        <div class="progress" role="progressbar" aria-busy="true" aria-valuemin="0" aria-valuemax="100">
+          <div class="bar" id="bar"></div>
+        </div>
+        <div class="center" style="margin-top:10px">
+          <div class="spinner" id="spin"></div>
+          <span class="muted" id="eta"><strong><span id="count">20</span>s</strong></span>
+        </div>
+      </div>
+      <div style="min-width:200px; display:flex; align-items:flex-end;">
+        <a id="dlBtn" class="btn" role="button" aria-disabled="true" href="#" target="_blank" rel="noopener noreferrer">
+          <span>Download Now</span>
+        </a>
+      </div>
+    </div>
+
+    <p class="note" style="margin-top:8px; text-align:center">First click opens a sponsor page. Second click starts your download ✅</p>
+
+    <div style="margin-top:14px; text-align:center">
+      <button id="howBtn" class="btn info" type="button">📖 How to Download</button>
+    </div>
+
+    <div class="hr"></div>
+    <h3 style="margin:0 0 6px 0">Download Instructions</h3>
+    <ol class="muted">
+      <li>After clicking the "Download Now" button, you will be redirected to the ad page first.</li>
+      <li>Then click the button again to access the actual download ✅.</li>
+      <li>Clicking the "How to Download" button will open a video guide modal with autoplay muted.</li>
+    </ol>
+
+
+<!-- Top Ad -->
+<div style="text-align:center; margin:12px 0;">
+ <script type="text/javascript">
+	atOptions = {
+		'key' : 'a89eb63da56404c63da8c540b2fd9c33',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/a89eb63da56404c63da8c540b2fd9c33/invoke.js"></script>
+</div>
+
+    <div class="hr"></div>
+    <div class="chips" aria-label="trusted-hosts">
+      <span class="chip">Pixeldrain.com</span>
+      <span class="chip">UsersDrive.com</span>
+      <span class="chip">Telegram</span>
+    </div>
+
+    <p class="note" style="margin-top:14px">Tip: Keep your browser's pop-up blocker on. We do not redirect to third-party ads.</p>
+  </div>
+  <p class="note" style="text-align:center; margin-top:14px">© <span id="year"></span> K-Drama Hub.</p>
+</div>
+
+<!-- Modal -->
+<div id="modalBackdrop" class="modal-backdrop" aria-hidden="true" role="dialog" aria-label="How to download video">
+  <div class="modal" role="document">
+    <div class="modal-header">
+      <strong style="color:var(--ink)">How to Download — Video Guide</strong>
+      <div>
+        <button id="unmuteBtn" class="modal-close" title="Unmute (if needed)">🔊</button>
+        <button id="closeModal" class="modal-close" aria-label="Close">✕</button>
+      </div>
+    </div>
+    <div class="modal-body">
+      <iframe id="ytFrame" src="" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      <div class="modal-steps">
+        <strong>Step-by-Step:</strong>
+        <ol>
+          <li>Click the "Download Now" button.</li>
+          <li>Open Pixeldrain / UsersDrive / Telegram page.</li>
+          <li>Close extra tabs if opened.</li>
+          <li>Return to this page if needed and click again.</li>
+          <li>Enjoy your download ✅</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Top Ad -->
+<div style="text-align:center; margin:12px 0;">
+ <script type="text/javascript">
+	atOptions = {
+		'key' : 'a89eb63da56404c63da8c540b2fd9c33',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/a89eb63da56404c63da8c540b2fd9c33/invoke.js"></script>
+</div>
+
+
+<noscript>
+  <div class="wrap"><div class="card" style="border-color:var(--warning)"><strong>JavaScript disabled:</strong> Direct link 👉 <a href="https://t.me/yuki_xbot?start=BQADAQADrgsAAs3iIUU0fyrYb5g4eRYE" target="_blank" rel="noopener">Download</a></div></div>
+</noscript>
+
+<script async>
+const WAIT_SECONDS = 20;
+const DOWNLOAD_URL="https://t.me/yuki_xbot?start=BQADAQADrgsAAs3iIUU0fyrYb5g4eRYE", AD_URL="https://otieu.com/4/9738333", YT_ID="c6ov4nnKxvs";
+const bar=document.getElementById('bar'), countEl=document.getElementById('count'), btn=document.getElementById('dlBtn'), spin=document.getElementById('spin'), eta=document.getElementById('eta'), statusText=document.getElementById('status-text');
+const modal=document.getElementById('modalBackdrop'), howBtn=document.getElementById('howBtn'), closeModal=document.getElementById('closeModal'), ytFrame=document.getElementById('ytFrame'), unmuteBtn=document.getElementById('unmuteBtn');
+let t=WAIT_SECONDS,p=0;
+let clickStep=0;
+
+const tick=()=>{t-=1;p=Math.min(100,p+(100/WAIT_SECONDS));countEl.textContent=Math.max(0,t);countEl.classList.remove('pop');void countEl.offsetWidth;countEl.classList.add('pop');bar.style.width=p+'%';if(t<=0) ready();}
+const ready=()=>{clearInterval(iv);bar.style.width='100%';spin.classList.add('hidden');eta.textContent='Link Generated Successfully';statusText.textContent='Ready to Download';btn.classList.add('ready');btn.removeAttribute('aria-disabled');fireConfetti();}
+const iv=setInterval(tick,1000);requestAnimationFrame(()=>{bar.style.transition='width .9s ease';});document.getElementById('year').textContent=new Date().getFullYear();
+
+btn.addEventListener('click', e=>{e.preventDefault();if(!btn.classList.contains('ready')) return;if(clickStep===0){window.open(AD_URL,'_blank');btn.querySelector('span').textContent="Click Again to Download";clickStep++;} else {window.open(DOWNLOAD_URL,'_blank');}});
+
+function fireConfetti(){const colors=['#22c55e','#86efac','#a7f3d0','#34d399','#bbf7d0','#ecfccb'];for(let i=0;i<15;i++){const p=document.createElement('div');p.className='confetti';const angle=(Math.PI*2)*(i/15),dist=140+Math.random()*140;const tx=Math.cos(angle)*dist+'px',ty=Math.sin(angle)*dist+'px',rot=(Math.random()*720-360)+'deg';p.style.setProperty('--tx',tx); p.style.setProperty('--ty',ty); p.style.setProperty('--rot',rot);p.style.background=colors[i%colors.length];p.style.animation=`burst ${600+Math.random()*500}ms ease-out forwards`;document.body.appendChild(p);setTimeout(()=>p.remove(),2000);}}
+
+function ytEmbedSrc(mute=true){return `https://www.youtube.com/embed/${YT_ID}?autoplay=1&muted=${mute?1:0}&rel=0&modestbranding=1&playsinline=1`; }
+howBtn.addEventListener('click',()=>{ytFrame.src=ytEmbedSrc(true);modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';setTimeout(doCloseModal,60000);});
+function doCloseModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');ytFrame.src='';document.body.style.overflow='auto';}
+closeModal.addEventListener('click',doCloseModal);modal.addEventListener('click',(e)=>{if(e.target===modal) doCloseModal();});
+unmuteBtn.addEventListener('click',()=>{ytFrame.src=ytEmbedSrc(false);});
+document.addEventListener('keydown',(e)=>{if(e.key==='Escape' && modal.classList.contains('open')) doCloseModal();});
+</script>
+</body>
+</html>
